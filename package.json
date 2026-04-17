@@ -1,0 +1,21 @@
+{
+  "name": "rpg-2d",
+  "version": "1.0.0",
+  "description": "Repository to store core ideas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nateyang7/rpg-2D.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nateyang7/rpg-2D/issues"
+  },
+  "homepage": "https://github.com/nateyang7/rpg-2D#readme",
+  "type": "module"
+}
