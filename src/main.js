@@ -1,8 +1,8 @@
 // src/main.js
 
-import { Entity } from "./entities/Entity.js";
+import { Player } from "./entities/Player.js";
 
-let e = new Entity();
-let e1 = new Entity();
+const p1 = new Player(0, 0);
+const p2 = new Player(1, 1);
 
-console.log(e.id, e1.id);
+console.log(p1.id, p2.id);

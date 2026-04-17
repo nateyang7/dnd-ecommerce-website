@@ -6,13 +6,13 @@
  */
 export class Entity {
   static id = 0;
-  x;
-  y;
 
   /**
    * Create an entity.
    */
-  constructor() {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
     this.id = Entity.id;
     Entity.id++;
   }
