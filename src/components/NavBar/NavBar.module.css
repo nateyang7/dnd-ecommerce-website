@@ -1,7 +1,10 @@
 /* src/components/NavBar/NavBar.module.css */
 
 .navbar {
-    overflow: hidden;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     background-color: var(--primary);
 }
 
