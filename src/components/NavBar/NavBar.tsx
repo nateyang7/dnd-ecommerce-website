@@ -1,5 +1,7 @@
 // src/composants/NavBar/NavBar.tsx
 
+import styles from "./NavBar.module.css";
+
 /** Composant react représentant la barre de navigation. */
 export default function NavBar() {
   const navigationLinks: { href: string; textContent: string }[] = [
@@ -9,7 +11,7 @@ export default function NavBar() {
     { href: "#contact", textContent: "Contact" },
   ];
   return (
-    <nav>
+    <nav className={styles.navbar}>
       {navigationLinks.map((navigationLink) => (
         <a href={navigationLink.href} key={navigationLink.textContent}>
           {navigationLink.textContent}
