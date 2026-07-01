@@ -3,3 +3,7 @@
     --secondary: #d20a2e;
     --text: #fffafa;
 }
+
+* {
+    margin: 0;
+}

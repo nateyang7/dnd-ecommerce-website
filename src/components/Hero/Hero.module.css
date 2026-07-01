@@ -1,0 +1,11 @@
+/* src/components/Hero/Hero.module.css */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--text);
+    text-align: center;
+}
