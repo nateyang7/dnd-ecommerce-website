@@ -1,5 +1,6 @@
 // src/composants/NavBar/NavBar.tsx
 
+/** Composant react représentant la barre de navigation. */
 export default function NavBar() {
   const navigationLinks: { href: string; textContent: string }[] = [
     { href: "#home", textContent: "Accueil" },
