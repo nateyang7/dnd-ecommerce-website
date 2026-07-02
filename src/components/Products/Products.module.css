@@ -13,3 +13,13 @@
     background-color: var(--primary);
     cursor: pointer;
 }
+
+.btn:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
