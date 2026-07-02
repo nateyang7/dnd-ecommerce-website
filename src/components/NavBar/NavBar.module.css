@@ -1,10 +1,12 @@
 /* src/components/NavBar/NavBar.module.css */
 
 .navbar {
+    display: flex;
+    flex-direction: row;
     width: 100vw;
     position: fixed;
-    top: 0;
     z-index: 1;
+    top: 0;
     background-color: var(--primary);
 }
 
@@ -15,6 +17,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 0.8rem;
 }
 
 .navbar a:hover {

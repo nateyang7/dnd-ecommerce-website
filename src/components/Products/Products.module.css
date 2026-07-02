@@ -3,4 +3,13 @@
 .products {
     width: 100vw;
     height: 100vh;
+    background-color: var(--primary);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: var(--primary);
+    cursor: pointer;
 }
