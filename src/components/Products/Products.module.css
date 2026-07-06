@@ -23,3 +23,26 @@
     background-color: #666;
     color: white;
 }
+
+.productsContainer {
+    padding: 2rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+}
+
+.product {
+    display: grid;
+    place-items: center;
+}
+
+.product p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.product img {
+    width: 75px;
+    height: 75px;
+}

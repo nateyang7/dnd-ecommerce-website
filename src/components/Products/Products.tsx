@@ -1,16 +1,6 @@
-// src/components/Products/Products.tsx
-
 import styles from "./Products.module.css";
-
-import book1 from "../../assets/book1.png";
-import book2 from "../../assets/book2.png";
-import book3 from "../../assets/book3.png";
-import dice1 from "../../assets/dice1.png";
-import dice2 from "../../assets/dice2.png";
-import dice3 from "../../assets/dice3.png";
-import card1 from "../../assets/card1.png";
-import card2 from "../../assets/card2.png";
-import card3 from "../../assets/card3.png";
+import { products } from "../../data/products";
+import type { Product } from "../../types/product";
 
 /** Composant react représentant la section proposant la liste des produits. */
 export default function Products() {
@@ -32,72 +22,14 @@ export default function Products() {
           <button className={styles.btn}>Accessoires</button>
         </div>
 
-        <div className="row">
-          <div className="column book">
-            <div className="content">
-              <img src={book1} alt="Livre 1" style={{ width: "150px" }}></img>
-              <h3>Livre 1</h3>
-              <p>Prix 1</p>
+        <div className={styles.productsContainer}>
+          {products.map((product: Product) => (
+            <div className={styles.product} key={product.id}>
+              <p>{product.name}</p>
+              <img src={product.img} alt={"Image pour " + product.name}></img>
+              <p>{product.price} €</p>
             </div>
-          </div>
-          <div className="column book">
-            <div className="content">
-              <img src={book2} alt="Livre 2" style={{ width: "150px" }}></img>
-              <h3>Livre 2</h3>
-              <p>Prix 2</p>
-            </div>
-          </div>
-          <div className="column book">
-            <div className="content">
-              <img src={book3} alt="Livre 3" style={{ width: "150px" }}></img>
-              <h3>Livre 3</h3>
-              <p>Prix 3</p>
-            </div>
-          </div>
-
-          <div className="column dice">
-            <div className="content">
-              <img src={dice1} alt="Dés 1" style={{ width: "150px" }}></img>
-              <h3>Set de dés 1</h3>
-              <p>Prix 4</p>
-            </div>
-          </div>
-          <div className="column dice">
-            <div className="content">
-              <img src={dice2} alt="Dés 2" style={{ width: "150px" }}></img>
-              <h3>Set de dés 2</h3>
-              <p>Prix 5</p>
-            </div>
-          </div>
-          <div className="column dice">
-            <div className="content">
-              <img src={dice3} alt="Dés 3" style={{ width: "150px" }}></img>
-              <h3>Set de dés 3</h3>
-              <p>Prix 6</p>
-            </div>
-          </div>
-
-          <div className="column card">
-            <div className="content">
-              <img src={card1} alt="Carte 1" style={{ width: "150px" }}></img>
-              <h3>Cartes 1</h3>
-              <p>Prix 7</p>
-            </div>
-          </div>
-          <div className="column card">
-            <div className="content">
-              <img src={card2} alt="Carte 2" style={{ width: "150px" }}></img>
-              <h3>Cartes 2</h3>
-              <p>Prix 8</p>
-            </div>
-          </div>
-          <div className="column card">
-            <div className="content">
-              <img src={card3} alt="Carte 3" style={{ width: "150px" }}></img>
-              <h3>Cartes 3</h3>
-              <p>Prix 9</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </>
