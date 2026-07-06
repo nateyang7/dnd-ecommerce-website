@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -13,8 +11,26 @@ function App() {
     <>
       <NavBar />
       <Hero />
+      <About
+        members={[
+          {
+            id: 1,
+            name: "Elminster",
+            description: "Notre spécialiste des livres",
+          },
+          {
+            id: 2,
+            name: "Artemis",
+            description: "Notre spécialiste des accessoires",
+          },
+          {
+            id: 3,
+            name: "Bruenor",
+            description: "Notre spécialistes des figurines",
+          },
+        ]}
+      />
       <Products />
-      <About />
       <Contact />
       <Footer />
     </>
