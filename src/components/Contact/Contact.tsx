@@ -11,7 +11,7 @@ export default function Contact() {
       <h2>Nous contacter</h2>
       <form action={handleSubmit}>
         <div className={styles.formInput}>
-          <label htmlFor="firstName">Prénom : </label>
+          <label htmlFor="firstName">Prénom</label>
           <input
             type="text"
             name="firstName"
