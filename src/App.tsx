@@ -7,31 +7,14 @@ import NavBar from "./components/NavBar/NavBar";
 import Products from "./components/Products/Products";
 
 import { navigationLinks } from "./data/navigationLinks";
+import { members } from "./data/members";
 
 function App() {
   return (
     <>
       <NavBar navigationLinks={navigationLinks} />
       <Hero />
-      <About
-        members={[
-          {
-            id: 1,
-            name: "Elminster",
-            description: "Notre spécialiste des livres",
-          },
-          {
-            id: 2,
-            name: "Artemis",
-            description: "Notre spécialiste des accessoires",
-          },
-          {
-            id: 3,
-            name: "Bruenor",
-            description: "Notre spécialistes des figurines",
-          },
-        ]}
-      />
+      <About members={members} />
       <Products />
       <Contact />
       <Footer />

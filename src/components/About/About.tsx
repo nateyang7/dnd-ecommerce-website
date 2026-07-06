@@ -1,10 +1,8 @@
-// src/components/About/About.tsx
-
 import styles from "./About.module.css";
 
 /** Type représentant les propriétés du composant About. */
 type AboutProps = {
-  members: { id: number; name: string; description: string }[];
+  members: { id: number; name: string; src: string; description: string }[];
 };
 
 /** Composant react représentant une section à propos de l'entreprise. */
@@ -24,13 +22,22 @@ export default function About({ members }: AboutProps) {
         mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div className="membersContainer">
+      <div className={styles.membersContainer}>
         {members.map(
-          (member: { id: number; name: string; description: string }) => (
-            <div className="memberDiv" key={member.id}>
-              <p>{member.name}</p>
-              <img alt={`Photo de ${member.name}`}></img>
-              <p>{member.description}</p>
+          (member: {
+            id: number;
+            name: string;
+            src: string;
+            description: string;
+          }) => (
+            <div className={styles.member} key={member.id}>
+              <p className={styles.memberName}>{member.name}</p>
+              <img
+                className={styles.memberImg}
+                src={member.src}
+                alt={`Photo de ${member.name}`}
+              ></img>
+              <p className={styles.memberDescription}>{member.description}</p>
             </div>
           ),
         )}
