@@ -1,5 +1,4 @@
-/* src/components/NavBar/NavBar.module.css */
-
+/* === Mobile (portrait) ==================================================== */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -22,4 +21,11 @@
 .navbar a:hover {
     background-color: var(--secondary);
     color: var(--primary);
+}
+
+/* === Desktop ============================================================== */
+@media (min-width: 1280px) {
+    .navbar a {
+        font-size: 150%;
+    }
 }
