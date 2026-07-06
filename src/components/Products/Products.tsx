@@ -16,7 +16,7 @@ export default function Products() {
       <section id="products" className={styles.products}>
         <h2>Nos Produits</h2>
 
-        <div className={styles.buttonsContainer}>
+        <div className={styles.btnContainer}>
           {controlButtons.map((controlButton) => (
             <button
               className={styles.btn}
