@@ -1,6 +1,9 @@
-/* src/components/Contact/Contact.module.css */
-
 .contact {
     width: 100vw;
     height: 100vh;
+    background: var(--primary);
+}
+
+.contact input {
+    color: var(--primary);
 }
