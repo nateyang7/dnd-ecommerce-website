@@ -1,4 +1,4 @@
-/* === Mobile (portrait) ==================================================== */
+/* === Mobile (320px x 764px) =============================================== */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -21,6 +21,13 @@
 .navbar a:hover {
     background-color: var(--secondary);
     color: var(--primary);
+}
+
+/* === Tablet =============================================================== */
+@media (min-width: 640px) {
+    .navbar a {
+        font-size: 100%;
+    }
 }
 
 /* === Desktop ============================================================== */
