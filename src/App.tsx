@@ -6,10 +6,12 @@ import Hero from "./components/Hero/Hero";
 import NavBar from "./components/NavBar/NavBar";
 import Products from "./components/Products/Products";
 
+import { navigationLinks } from "./data/navigationLinks";
+
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar navigationLinks={navigationLinks} />
       <Hero />
       <About
         members={[
