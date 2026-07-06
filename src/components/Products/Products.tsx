@@ -4,22 +4,28 @@ import type { Product } from "../../types/product";
 
 /** Composant react représentant la section proposant la liste des produits. */
 export default function Products() {
+  const controlButtons = [
+    { id: 1, textContent: "Tout afficher" },
+    { id: 2, textContent: "Livres" },
+    { id: 3, textContent: "Dés" },
+    { id: 4, textContent: "Figurines" },
+  ];
   function handleClick() {}
   return (
     <>
       <section id="products" className={styles.products}>
         <h2>Nos Produits</h2>
+
         <div className={styles.buttonsContainer}>
-          <button className={styles.btn} onClick={handleClick}>
-            Montrer tout
-          </button>
-          <button className={styles.btn}>Livres</button>
-          <button className={styles.btn} onClick={handleClick}>
-            Dés
-          </button>
-          <button className={styles.btn}>Cartes</button>
-          <button className={styles.btn}>Figurines</button>
-          <button className={styles.btn}>Accessoires</button>
+          {controlButtons.map((controlButton) => (
+            <button
+              className={styles.btn}
+              onClick={handleClick}
+              key={controlButton.id}
+            >
+              {controlButton.textContent}
+            </button>
+          ))}
         </div>
 
         <div className={styles.productsContainer}>
