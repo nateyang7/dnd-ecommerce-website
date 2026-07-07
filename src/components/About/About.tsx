@@ -1,12 +1,8 @@
 import styles from "./About.module.css";
-
-/** Type représentant les propriétés du composant About. */
-type AboutProps = {
-  members: { id: number; name: string; src: string; description: string }[];
-};
+import teamImg from "../../assets/team.jpg";
 
 /** Composant react représentant une section à propos de l'entreprise. */
-export default function About({ members }: AboutProps) {
+export default function About() {
   return (
     <section id="about" className={styles.about}>
       <h2>À Propos</h2>
@@ -18,26 +14,7 @@ export default function About({ members }: AboutProps) {
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
-      <div className={styles.membersContainer}>
-        {members.map(
-          (member: {
-            id: number;
-            name: string;
-            src: string;
-            description: string;
-          }) => (
-            <div className={styles.member} key={member.id}>
-              <p className={styles.memberName}>{member.name}</p>
-              <img
-                className={styles.memberImg}
-                src={member.src}
-                alt={`Photo de ${member.name}`}
-              ></img>
-              <p className={styles.memberDescription}>{member.description}</p>
-            </div>
-          ),
-        )}
-      </div>
+      <img className={styles.teamPhoto} src={teamImg} alt="Photo de l'équipe" />
     </section>
   );
 }
