@@ -9,6 +9,7 @@
     justify-content: center space-evenly;
     align-items: center;
     gap: 0.5rem;
+    overflow: hidden;
 }
 
 .btnContainer {

@@ -10,6 +10,11 @@ export default function Contact() {
   return (
     <section id="contact" className={styles.contact}>
       <h2>Nous Contacter</h2>
+
+      <p>
+        Vous souhaitez nous contacter ? Nous vous mettons à disposition un
+        formulaire.
+      </p>
       <form action={handleSubmit}>
         <div className={styles.formInput}>
           <label htmlFor="firstName">Prénom</label>

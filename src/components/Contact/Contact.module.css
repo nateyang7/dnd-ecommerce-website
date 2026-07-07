@@ -2,8 +2,12 @@
     width: 100vw;
     height: 100vh;
     background: var(--primary);
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 8rem 0 0 0;
 }
 
 .contact form {
