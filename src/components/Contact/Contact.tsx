@@ -2,13 +2,14 @@ import styles from "./Contact.module.css";
 
 /** Composant react représentant la section pour contacter l'entreprise. */
 export default function Contact() {
+  /** Handle the submit from the form element. */
   function handleSubmit(): void {
     return;
   }
 
   return (
     <section id="contact" className={styles.contact}>
-      <h2>Nous contacter</h2>
+      <h2>Nous Contacter</h2>
       <form action={handleSubmit}>
         <div className={styles.formInput}>
           <label htmlFor="firstName">Prénom</label>

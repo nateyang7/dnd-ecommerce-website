@@ -14,21 +14,21 @@ import npcFigurines from "../assets/products/npcs-figurines.jpg";
 export const products: Product[] = [
   {
     id: 1,
-    name: "DND : Manuel des joueurs (2024)",
+    name: "Manuel des joueurs (2024)",
     img: playerBook,
     type: ProductType.Book,
     price: 31.99,
   },
   {
     id: 2,
-    name: "DND : Guide du maître (2024)",
+    name: "Guide du maître (2024)",
     img: dungeonMasterBook,
     type: ProductType.Book,
     price: 31.99,
   },
   {
     id: 3,
-    name: "DND : Manuel des monstres (2024)",
+    name: "Manuel des monstres (2024)",
     img: monsterBook,
     type: ProductType.Book,
     price: 31.99,

@@ -21,7 +21,11 @@ section {
 }
 
 h2 {
-    text-decoration: underline;
+    width: 12rem;
+    text-align: center;
+    background: var(--secondary);
+    padding: 1rem;
+    border-radius: 30px;
 }
 
 /* === Products === */
