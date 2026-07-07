@@ -1,5 +1,3 @@
-// src/composants/NavBar/NavBar.tsx
-
 import styles from "./NavBar.module.css";
 
 type NavBarProps = {

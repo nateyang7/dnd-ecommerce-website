@@ -2,7 +2,7 @@ import styles from "./Contact.module.css";
 
 /** Composant react représentant la section pour contacter l'entreprise. */
 export default function Contact() {
-  /** Handle the submit from the form element. */
+  /** S'occupe de la gestion des données envoyées par le form. */
   function handleSubmit(): void {
     return;
   }
