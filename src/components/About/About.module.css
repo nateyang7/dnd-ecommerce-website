@@ -1,7 +1,7 @@
 /* === Mobile (Minimum width: 320px) ======================================== */
 .about {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background: var(--primary);
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
 
 .teamPhoto {
     width: 100%;
-    height: 14rem;
+    height: 17rem;
 }
 
 /* === Tablet (Minimum width: 640px) ======================================== */
@@ -35,6 +35,13 @@
     }
 
     .teamPhoto {
-        height: 63%;
+        height: 58%;
+    }
+}
+
+/* === Desktop (Minimum width: 1024px) ====================================== */
+@media (min-width: 1024px) {
+    .teamPhoto {
+        height: 62%;
     }
 }
