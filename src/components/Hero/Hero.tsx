@@ -6,7 +6,6 @@ export default function Hero() {
     <div id="home" className={styles.heroImg}>
       <div className={styles.heroText}>
         <h1>Bienvenue</h1>
-        <p>Préparer vos aventures !</p>
       </div>
     </div>
   );

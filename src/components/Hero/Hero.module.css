@@ -17,4 +17,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--text);
+    font-style: italic;
+}
+
+.heroText h1 {
+    font-size: 250%;
+}
+
+.heroText p {
+    font-size: 100%;
 }
