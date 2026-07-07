@@ -1,16 +1,18 @@
 import styles from "./Products.module.css";
-import { products } from "../../data/products";
 import type { Product } from "../../types/product";
 
 /** Composant react représentant la section proposant la liste des produits. */
-export default function Products() {
+export default function Products({ products }: { products: Product[] }) {
   const controlButtons = [
     { id: 1, textContent: "Tout afficher" },
     { id: 2, textContent: "Livres" },
     { id: 3, textContent: "Dés" },
     { id: 4, textContent: "Figurines" },
   ];
+
+  /** Trie les produits par catégorie selon le choix du bouton. */
   function handleClick() {}
+
   return (
     <>
       <section id="products" className={styles.products}>

@@ -7,15 +7,15 @@ import NavBar from "./components/NavBar/NavBar";
 import Products from "./components/Products/Products";
 
 import { navigationLinks } from "./data/navigationLinks";
-import { members } from "./data/members";
+import { products } from "./data/products";
 
 function App() {
   return (
     <>
       <NavBar navigationLinks={navigationLinks} />
       <Hero />
-      <About members={members} />
-      <Products />
+      <About />
+      <Products products={products} />
       <Contact />
       <Footer />
     </>
