@@ -1,5 +1,4 @@
-/* src/components/Products/Products.module.css */
-
+/* === Mobile (Minimum width: 320px) ======================================== */
 .products {
     width: 100vw;
     height: 100vh;
@@ -10,11 +9,15 @@
     align-items: center;
     gap: 0.5rem;
     overflow: hidden;
+    padding: 8rem 0 0 0;
 }
 
 .btnContainer {
     display: flex;
     flex-direction: row;
+    border: 0.2rem solid var(--secondary);
+    border-radius: 5px;
+    margin: 1rem 1rem 0 1rem;
 }
 
 .btn {
