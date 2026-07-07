@@ -32,6 +32,10 @@
 
 /* === Desktop ============================================================== */
 @media (min-width: 1280px) {
+    .navbar {
+        flex-direction: row;
+    }
+
     .navbar a {
         font-size: 150%;
     }
