@@ -1,3 +1,4 @@
+/* === Mobile (Minimum width: 320px) ======================================== */
 .heroImg {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -24,6 +25,11 @@
     font-size: 250%;
 }
 
-.heroText p {
-    font-size: 100%;
+/* === Tablet (Minimum width: 640px) ======================================== */
+@media (min-width: 640px) {
+    .heroText h1 {
+        font-size: 500%;
+    }
 }
+
+/* === Desktop (Minimum width: 1024px) ====================================== */

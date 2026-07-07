@@ -1,4 +1,4 @@
-/* === Mobile (320px x 764px) =============================================== */
+/* === Mobile (Minimum width: 320px) ======================================== */
 .navbar {
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     color: var(--text);
 }
 
-/* === Tablet =============================================================== */
+/* === Tablet (Minimum width: 640px) ======================================== */
 @media (min-width: 640px) {
     .navbar {
         flex-direction: row;
@@ -34,7 +34,7 @@
     }
 }
 
-/* === Desktop ============================================================== */
+/* === Desktop (Minimum width: 1024px) ====================================== */
 @media (min-width: 1280px) {
     .navbar a {
         font-size: 150%;
